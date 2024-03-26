@@ -1,8 +1,16 @@
 'use client';
-import { MapContainer, TileLayer, useMap,Marker,Popup} from 'react-leaflet';
+// import { MapContainer, TileLayer, useMap,Marker,Popup} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useState,useEffect} from "react";
 import L from 'leaflet';
+
+
+//conditionally import the components from react-leaflet 
+let MapContainer, TileLayer, Marker, Popup, useMap,L;
+if (typeof window !== 'undefined') {
+    ({ MapContainer, TileLayer, Marker, Popup, useMap } = require('react-leaflet'));
+    
+}
 
 
 export default function Map({lat,long, currentPosition}) {
