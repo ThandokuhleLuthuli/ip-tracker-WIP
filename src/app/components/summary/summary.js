@@ -1,4 +1,4 @@
-
+'use client';
 
 export default function Summary({ipAddress,isp,country,timeZone}){
     return(
