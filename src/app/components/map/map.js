@@ -6,7 +6,7 @@ import L from 'leaflet';
 
 
 //conditionally import the components from react-leaflet 
-let MapContainer, TileLayer, Marker, Popup, useMap,L;
+let MapContainer, TileLayer, Marker, Popup, useMap;
 if (typeof window !== 'undefined') {
     ({ MapContainer, TileLayer, Marker, Popup, useMap } = require('react-leaflet'));
     
