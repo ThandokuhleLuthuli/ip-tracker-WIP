@@ -1,4 +1,4 @@
-const baseURL = "https://geo.ipify.org/api/v2/country,city?apiKey=at_VQg7TY67O4uXpUo7BGiT16Mo6tNoO&ipAddress=";
+const baseURL = "https://geo.ipify.org/api/v2/country,city?apiKey=at_iQ4sZr0AfFCAjsiwY070lMyZL7o4u&ipAddress=";
 
 
  const getData = async (ip) => {

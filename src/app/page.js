@@ -4,16 +4,15 @@ import Map from './components/map/map';
 import Summary from './components/summary/summary';
 import Search from './components/search/search';
 import './page.module.css';
-import { useState} from 'react';
-import MyContextProvider from './context/coordinatesContext';
+
 
 export default function Home() {
 
 
 
   return (
-   <MyContextProvider >
-     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+   
+     <main className="flex min-h-screen flex-col items-center justify-between">
       <Search/>
       
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -123,6 +122,6 @@ export default function Home() {
       </div> */}
     </main>
 
-   </MyContextProvider>
+
   )
 }
