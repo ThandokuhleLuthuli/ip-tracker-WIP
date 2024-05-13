@@ -1,12 +1,18 @@
 'use client';
-
 import Search from './components/search/search';
 import './page.module.css';
+import {useEffect} from "react";
+
 
 
 
 export default function Home() {
 
+useEffect(() => {
+
+   console.log(window.innerWidth);
+
+},[]);
 
 
   return (
