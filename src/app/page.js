@@ -1,21 +1,10 @@
 'use client';
-import Search from './components/search/search';
+import dynamic from 'next/dynamic';
 import './page.module.css';
-import {useEffect} from "react";
 
-
-
-
+const Search = dynamic(() => import('./components/search/search'),{ssr:false});
 export default function Home() {
-
-useEffect(() => {
-
-   console.log(window.innerWidth);
-
-},[]);
-
-
-  return (
+return (
    
      <main className="flex min-h-screen flex-col items-center justify-between">
       <Search/>
